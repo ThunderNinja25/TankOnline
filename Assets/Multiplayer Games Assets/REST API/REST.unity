@@ -522,7 +522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157423409}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1229992565}
+        m_TargetAssemblyTypeName: LoginRegisterScreen, Assembly-CSharp
+        m_MethodName: LoginButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &157423409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,6 +584,7 @@ GameObject:
   - component: {fileID: 173647412}
   - component: {fileID: 173647414}
   - component: {fileID: 173647413}
+  - component: {fileID: 173647415}
   m_Layer: 5
   m_Name: High Score Panel
   m_TagString: Untagged
@@ -594,7 +607,6 @@ RectTransform:
   - {fileID: 550170777}
   - {fileID: 667008709}
   - {fileID: 572118162}
-  - {fileID: 701746504}
   - {fileID: 836836574}
   m_Father: {fileID: 1229992564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -641,6 +653,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173647411}
   m_CullTransparentMesh: 1
+--- !u!114 &173647415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173647411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5969553d571e95c48aebe02ef8fa8dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreEntry: {fileID: 3492755434028131034, guid: 7920d1485c6154447968f5fb35b78db0, type: 3}
+  AllPlayers:
+    AllPlayers: []
 --- !u!1 &458627579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1111,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550170779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 173647415}
+        m_TargetAssemblyTypeName: ScoreboardManager, Assembly-CSharp
+        m_MethodName: DisplayScoreboard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &550170779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,7 +1244,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 564027910}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1229992565}
+        m_TargetAssemblyTypeName: LoginRegisterScreen, Assembly-CSharp
+        m_MethodName: RegisterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &564027910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30375, y: 0.5474397}
   m_AnchorMax: {x: 0.48125002, y: 0.596}
-  m_AnchoredPosition: {x: -0.59999084, y: -1.5909996}
+  m_AnchoredPosition: {x: -0.5999756, y: -1.5909996}
   m_SizeDelta: {x: 2.4277954, y: -0.8167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642359452
@@ -1744,6 +1795,7 @@ GameObject:
   - component: {fileID: 701746504}
   - component: {fileID: 701746506}
   - component: {fileID: 701746505}
+  - component: {fileID: 701746507}
   m_Layer: 5
   m_Name: txt_username
   m_TagString: Untagged
@@ -1758,17 +1810,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701746503}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 173647412}
+  m_Father: {fileID: 836836574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5387501, y: 0.5672419}
   m_AnchorMax: {x: 0.9537501, y: 0.6551726}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: 0.2000122, y: -1}
+  m_AnchoredPosition: {x: -141.26564, y: 227.676}
+  m_SizeDelta: {x: 266.0263, y: 35.292297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701746505
 MonoBehaviour:
@@ -1867,6 +1919,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701746503}
   m_CullTransparentMesh: 1
+--- !u!114 &701746507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701746503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694a788942119264ea12c513595200c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usernameText: {fileID: 701746505}
+  scoreText: {fileID: 0}
 --- !u!1 &716975437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.030000001, y: 0.66300005}
   m_AnchorMax: {x: 1, y: 0.88900006}
-  m_AnchoredPosition: {x: -0.5258026, y: 0.15211868}
+  m_AnchoredPosition: {x: -0.52578735, y: 0.15211868}
   m_SizeDelta: {x: 1.0515, y: -0.30412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766747715
@@ -2298,6 +2364,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1229923538}
+  - {fileID: 701746504}
   m_Father: {fileID: 173647412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
@@ -2947,6 +3014,7 @@ GameObject:
   - component: {fileID: 1229992563}
   - component: {fileID: 1229992562}
   - component: {fileID: 1229992561}
+  - component: {fileID: 1229992565}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3038,6 +3106,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1229992565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229992560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda7b18cc977c50489b68670ef46ce01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loggedUser:
+    username: 
+    password: 
+    highestScore: 0
+  loginScreen: {fileID: 2134566546}
+  loggedUserDisplay: {fileID: 701746507}
+  usernameInput: {fileID: 528637021}
+  passwordInput: {fileID: 638779331}
+  scoreInput: {fileID: 1259246191}
 --- !u!1 &1249106000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,7 +4101,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1846335780}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1229992565}
+        m_TargetAssemblyTypeName: LoginRegisterScreen, Assembly-CSharp
+        m_MethodName: SubmitScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1846335780
 MonoBehaviour:
   m_ObjectHideFlags: 0
